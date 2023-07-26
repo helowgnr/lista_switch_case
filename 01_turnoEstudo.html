@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <script>
     /*
-    //PROBLEMA: Faça um script que pergunte em que turno você estuda.
+    PROBLEMA: Faça um script que pergunte em que turno você estuda.
     Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
     Imprima a mensagem
     - "Bom Dia!"
@@ -12,11 +12,26 @@
     */
 
     //ENTRADA
-    
-    
+
+    const turno = prompt(`Em qual turno você estuda?`).toLowerCase().trim();
+
     //PROCESSAMENTO
 
-    
-    //SAÍDA
+    switch (turno) {
+        case "matutino":
+            alert(`bom dia!`)
+            break;
 
+        case "vespertino":
+            alert(`boa tarde!`)
+            break;
+
+        case "noturno":
+            alert(`boa noite!`)
+            break;
+
+        default:
+            alert(`resposta inválida!`);
+            break;
+    }
 </script>
